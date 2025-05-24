@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lauzarg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>LAU ZARATE</h1>
+            <div class="typewriter" id="typewriter"></div>
+            <div>   
+            <a href="#sobre-mi" class="cta-button">Descubre Más</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+            <div class="profile-img">👋</div>
+            <div class="about-text">
+                <p>¡Hola! Soy una desarrolladora apasionada por crear experiencias digitales únicas y funcionales. Con experiencia en tecnologías modernas, me especializo en crear soluciones innovadoras que combinan diseño atractivo con funcionalidad robusta.</p>
+                <br>
+                <p>Mi enfoque se centra en la atención al detalle, la usabilidad y el rendimiento. Siempre estoy buscando nuevos desafíos que me permitan crecer profesionalmente y aportar valor a cada proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-name">HTML & CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="90"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">React</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="80"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">Node.js</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="75"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="70"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-name">UI/UX Design</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="85"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">E-commerce Moderno</h3>
+                <p class="project-desc">Plataforma de comercio electrónico con diseño responsive y funcionalidades avanzadas de carrito de compras.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="#" class="project-link">Ver Proyecto →</a>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Dashboard Analytics</h3>
+                <p class="project-desc">Panel de control interactivo para análisis de datos con gráficos dinámicos y reportes en tiempo real.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">Firebase</span>
+                </div>
+                <a href="#" class="project-link">Ver Proyecto →</a>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">App Móvil Social</h3>
+                <p class="project-desc">Aplicación móvil para redes sociales con chat en tiempo real y compartición de contenido multimedia.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Socket.io</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+                <a href="#" class="project-link">Ver Proyecto →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Laura Zarate. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
