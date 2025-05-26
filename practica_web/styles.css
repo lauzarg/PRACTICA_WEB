@@ -1,0 +1,150 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #1d1d1d;
+  background-color: #9ec9d6;
+}
+
+/* Estilos para el encabezado */
+.site-header {
+    background-color: #209aff;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 2px solid #9554ff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .site-header__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Estilos para la navegación */
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    background-color: #444;
+  }
+  
+  .nav__menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav__link:hover {
+    color: #ffa500;
+  }
+  
+  /* Estilos para el contenido principal */
+  .main-content {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Estilos para la sección "Sobre mí" */
+  .about {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #f5f5f5;
+  }
+  
+  .about__name {
+    font-weight: bold;
+    color: #008f40;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Estilos para la lista de favoritos */
+  .favorites__list {
+    padding-left: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .contact__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .contact__submit {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact__submit:hover {
+    background-color: #004c99;
+  }
+  
+  /* Estilos para mensajes emergentes */
+  .message__dialog {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .message__button {
+    background-color: #387eff;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .message__button:hover {
+    background-color: #333;
+  }
+  
+  /* Estilos para el pie de página */
+  .site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #244757;
+    color: #fff;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Estilos adicionales para encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}

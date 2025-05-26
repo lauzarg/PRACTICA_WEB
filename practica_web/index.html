@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Mi Primera Web</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     </head> 
+<body>
+
+    <header class="site-header">
+      <h1 class="site-header__title">Bienvenido a mi primera web</h1>
+        <nav>
+        
+        <a href="index.html">Inicio</a>
+        | 
+        <a href="contacto.html">Contacto</a>
+        |
+        <a href="acerca.html">Sobre mí</a>
+      </nav>
+    </header>
+    
+    <main class="main-content">
+    
+      <section class="about" id="sobre-mi">
+        <p class="about__text">
+          Hola, soy <span class="about__name">LauZ</span> y estoy aprendiendo a hacer páginas web.
+        </p>
+      </section>
+    
+      <section class="favorites">
+        <h2 class="favorites__title">Mis lenguajes favoritos</h2>
+        <ol class="favorites__list">
+          <li class="favorites__item">JavaScript -ponele-</li>
+          <li class="favorites__item">Python</li>
+          <li class="favorites__item">Java -ja!-</li>
+        </ol>
+      </section>
+    
+      <section class="contact" id="contacto">
+        <h2 class="contact__title">Contacto</h2>
+        <form class="contact__form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" class="contact__input" name="nombre" required />
+    
+          <label for="email">Correo:</label>
+          <input type="email" id="email" class="contact__input" name="email" required />
+    
+          <input type="submit" class="contact__submit" value="Enviar" />
+        </form>
+      </section>
+    
+      <section class="message">
+        <dialog class="message__dialog" id="mensaje">
+          Gracias por visitar mi sitio
+        </dialog>
+        <button class="message__button" id="btnVerMensaje">Ver mensaje</button>
+      </section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <p class="site-footer__text">Hecho con ♥ por LauZ</p>
+    </footer>
+    </body> </html>
