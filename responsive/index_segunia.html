@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grillas Responsive</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 40px;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .demo-container {
+            margin-bottom: 50px;
+        }
+        
+        .color-box {
+            height: 100px;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .blue-box {
+            background-color: #2E86AB;
+        }
+        
+        .green-box {
+            background-color: #3ba251;
+        }
+        
+        .yellow-box {
+            background-color: #F18F01;
+        }
+        
+        @media (max-width: 575.98px) {
+            .section-title {
+                font-size: 1.2rem;
+            }
+            
+            .color-box {
+                height: 80px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        .info-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+</head>
+<body>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <h1 class="text-center mb-5">Bootstrap Responsive Grid System</h1>
+                
+                <div class="info-box">
+                    <h4>Explicación del comportamiento:</h4>
+                    <p><strong>Tamaño SM en adelante (≥576px):</strong> Dos columnas side by side</p>
+                    <p><strong>Tamaño XS (&lt;576px):</strong> Las columnas se apilan verticalmente</p>
+                </div>
+                
+                <!-- Tamaño SM en adelante -->
+                <div class="demo-container">
+                    <h2 class="section-title">Tamaño de sm en adelante</h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="color-box blue-box">
+                                        Azul (col-12)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4">
+                                    <div class="color-box green-box">
+                                        Verde
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="color-box yellow-box">
+                                        Amarillo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                            <h2 class="section-title">Tamaño xs</h2>
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <div class="color-box blue-box">
+                                        Azul (col-12)
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="color-box green-box">
+                                        Verde (col-12)
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="color-box yellow-box">
+                                        Amarillo (col-12)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Información adicional -->
+                <div class="info-box">
+                    <h4>Clases de Bootstrap utilizadas:</h4>
+                    <ul>
+                        <li><code>col-12 col-sm-6</code>: Ocupa toda la fila en XS, media fila desde SM</li>
+                        <li><code>col-4</code> y <code>col-8</code>: Proporción 1:2 en la segunda fila</li>
+                        <li><code>mt-3 mt-sm-0</code>: Margen superior en XS, sin margen desde SM</li>
+                        <li><code>mb-2</code>: Margen inferior entre elementos apilados</li>
+                    </ul>
+                    
+                    <h5 class="mt-4">Puntos de quiebre de Bootstrap:</h5>
+                    <ul>
+                        <li><strong>XS:</strong> &lt;576px</li>
+                        <li><strong>SM:</strong> ≥576px</li>
+                        <li><strong>MD:</strong> ≥768px</li>
+                        <li><strong>LG:</strong> ≥992px</li>
+                        <li><strong>XL:</strong> ≥1200px</li>
+                        <li><strong>XXL:</strong> ≥1400px</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
