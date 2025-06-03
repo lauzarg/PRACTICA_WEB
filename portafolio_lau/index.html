@@ -14,7 +14,7 @@
         <div class="nav-container">
             <a href="#" class="logo">Lau Zarate</a>
             
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="#portfolio" class="nav-link">Portafolio</a>
                 </li>
@@ -26,7 +26,7 @@
                 </li>
             </ul>
 
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -78,5 +78,16 @@
   <footer>
     <p>&copy; 2025 - Lau Zarate</p>
   </footer>
+
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+<script src="script.js"></script>
 </body>
 </html>
