@@ -1,7 +1,7 @@
 :root {
-  --rosa: #06d6a0;
+  --verde: #06d6a0;
   --amarillo: #ffd166;
-  --verde: #ef476f;
+  --rosa: #ef476f;
   --celeste: #118ab2;
   --azul-oscuro: #073b4c;
 }
@@ -25,6 +25,7 @@ body {
   font-family: 'Arial_narrow', sans-serif;
   background-color: #f5f5f5;
   color: var(--azul-oscuro);
+  font-size: 30px;
 }
 
 /* HEADER */
@@ -58,7 +59,7 @@ nav a:hover {
 
 /* HERO */
 .hero {
-  background-color: var(--verde);
+  background-color: var(--rosa);
   color: white;
   text-align: center;
   padding: 140px 20px 80px;
@@ -71,24 +72,25 @@ nav a:hover {
 }
 
 .hero h2 {
-  font-size: 54px;
+  font-size: 80px;
   margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 /* SECTIONS */
 .section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 80%;
   margin: auto;
+  text-align: center;
 }
 
 .section h2 {
-  font-size: 28px;
-  color: var(--rosa);
+  font-size: 34px;
+  color: var(--verde);
   margin-bottom: 20px;
 }
 
@@ -96,17 +98,23 @@ nav a:hover {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
+.container {
+  max-width: 1200px; 
+  margin:  auto;
+  padding: auto;
+}
 
 .proyecto {
   background-color: var(--amarillo);
-  padding: 20px;
+  padding: 5px;
   margin-bottom: 20px;
   border-left: 5px solid var(--azul-oscuro);
-  width: 300px;
+  width: 450px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
 }
 
 /* FOOTER */
@@ -231,7 +239,7 @@ footer {
 }
 
 .content p {
-  font-size: 35px;
+  font-size: 20px;
   color: #7f8c8d;
   max-width: 600px;
   margin: 0 auto;
